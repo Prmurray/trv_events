@@ -1,0 +1,15 @@
+<!doctype html>
+<html>
+    <head>
+      {% if title %}
+      <title>{{ title }} - TRV</title>
+      {% else %}
+      <title>TRV Crew Leaders Page</title>
+      {% endif %}
+    </head>
+    <body>
+        <div>Crew Leader Access: <a href="/index">Events Home</a></div>
+        <hr>
+        {% block content %}{% endblock %}
+    </body>
+</html>
